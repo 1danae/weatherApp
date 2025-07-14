@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/shape_10dp_corners_black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="空气质量"
+        android:textColor="@color/white_trans"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <com.example.weatherapp.view.AirQualityView
+            android:id="@+id/air_quality_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:translationX="-20dp"
+            android:layout_weight="10" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/aqi_info_text_pm10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:gravity="start"
+                android:textSize="15sp"
+                android:textColor="@color/white_trans" />
+            <TextView
+                android:id="@+id/aqi_info_text_pm2p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:textColor="@color/white_trans" />
+            <TextView
+                android:id="@+id/aqi_info_text_no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:gravity="start"
+                android:textSize="15sp"
+                android:textColor="@color/white_trans" />
+            <TextView
+                android:id="@+id/aqi_info_text_so2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginVertical="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_trans" />
+            <TextView
+                android:id="@+id/aqi_info_text_co"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_trans" />
+            <TextView
+                android:id="@+id/aqi_info_text_o3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginVertical="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_trans" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
